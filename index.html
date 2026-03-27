@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Imed Mihoubi • Développeur</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --primary:#2a5cff;
+    --bg:#f5f7fb;
+    --dark:#0f172a;
+    --card:#ffffff;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:var(--bg);
+    color:var(--dark);
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:20px;
+}
+
+.header{
+    text-align:center;
+    padding:40px 20px;
+}
+
+.header h1{
+    font-size:40px;
+    font-weight:800;
+}
+
+.header p{
+    color:#666;
+    margin-top:10px;
+}
+
+.section{
+    margin-top:30px;
+}
+
+.card{
+    background:var(--card);
+    padding:25px;
+    border-radius:16px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.05);
+    margin-bottom:20px;
+}
+
+h2{
+    margin-bottom:15px;
+    color:var(--primary);
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+
+.project{
+    padding:15px;
+    border:1px solid #eee;
+    border-radius:10px;
+    transition:0.2s;
+}
+
+.project:hover{
+    transform:translateY(-5px);
+    border-color:var(--primary);
+}
+
+.btn{
+    display:inline-block;
+    margin-top:10px;
+    padding:8px 14px;
+    background:var(--primary);
+    color:white;
+    border-radius:8px;
+    text-decoration:none;
+    font-size:14px;
+}
+
+.skills span{
+    display:inline-block;
+    background:#eef2ff;
+    padding:6px 10px;
+    border-radius:8px;
+    margin:5px;
+    font-size:13px;
+}
+
+.footer{
+    text-align:center;
+    margin-top:40px;
+    font-size:14px;
+    color:#777;
+}
+
+/* 📱 MOBILE */
+@media(max-width:768px){
+    .header h1{font-size:28px;}
+    .projects{grid-template-columns:1fr;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+    <h1>Imed Mihoubi</h1>
+    <p>Développeur Concepteur Logiciel • Python • Django • API</p>
+</div>
+
+<!-- PROJETS -->
+<div class="section">
+<div class="card">
+<h2>🚀 Projets</h2>
+
+<div class="projects">
+
+<div class="project">
+<h3>ProPaie</h3>
+<p>Application de gestion de paie avec génération PDF, API Django et interface web.</p>
+<a href="https://github.com/Imed7223/ProPaie" class="btn">Voir projet</a>
+</div>
+
+<div class="project">
+<h3>SoftDesk API</h3>
+<p>API REST sécurisée avec JWT, gestion de projets, issues et commentaires.</p>
+<a href="#" class="btn">Voir projet</a>
+</div>
+
+<div class="project">
+<h3>LITReview</h3>
+<p>Application sociale de critiques de livres avec système de suivi utilisateurs.</p>
+<a href="#" class="btn">Voir projet</a>
+</div>
+
+<div class="project">
+<h3>Algo Trading Python</h3>
+<p>Optimisation d'investissements avec algorithmes brute-force et optimisés.</p>
+<a href="#" class="btn">Voir projet</a>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- COMPÉTENCES -->
+<div class="section">
+<div class="card">
+<h2>🧠 Compétences</h2>
+<div class="skills">
+<span>Python</span>
+<span>Django</span>
+<span>Django REST</span>
+<span>API JWT</span>
+<span>HTML</span>
+<span>CSS</span>
+<span>JavaScript</span>
+<span>SQL</span>
+</div>
+</div>
+</div>
+
+<!-- EXPÉRIENCE -->
+<div class="section">
+<div class="card">
+<h2>💼 Profil</h2>
+<p>
+Développeur spécialisé en Python et Django, je conçois des applications web complètes,
+API sécurisées et solutions métiers. Passionné par l’optimisation, la performance
+et les projets concrets.
+</p>
+</div>
+</div>
+
+<!-- CONTACT -->
+<div class="section">
+<div class="card">
+<h2>📞 Contact</h2>
+<p>Email : mihoubiimed@yahoo.fr</p>
+<p>GitHub : github.com/Imed7223</p>
+</div>
+</div>
+
+<div class="footer">
+© 2026 • Imed Mihoubi
+</div>
+
+</div>
+
+</body>
+</html>
